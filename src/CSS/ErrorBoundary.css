@@ -1,0 +1,66 @@
+/* src/components/ErrorBoundary.css */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.error-card {
+    max-width: 450px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    text-align: center;
+    border-top: 5px solid #ef4444; /* Red accent */
+}
+
+.error-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.error-title {
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.error-message {
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+.error-details {
+    background-color: #fef2f2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: left;
+    overflow-x: auto;
+    margin-bottom: 24px;
+    white-space: pre-wrap;
+    border: 1px solid #fee2e2;
+}
+
+.error-button {
+    background-color: #2563eb; /* Blue primary */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.error-button:hover {
+    background-color: #1d4ed8;
+}

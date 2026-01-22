@@ -1,0 +1,38 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #0f172a;
+  --accent: #10b981;
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --gray: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; }
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Auth Pages Wrapper (Login/Signup) */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

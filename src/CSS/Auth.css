@@ -1,0 +1,159 @@
+/* 1. Page Container */
+.auth-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+/* 2. Video Background (Fixed to prevent gaps) */
+.auth-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* 3. Dark Overlay */
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.45); 
+  z-index: -1;
+}
+
+/* 4. Glassmorphism Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.82); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: auto;
+  z-index: 10;
+}
+
+/* 5. Typography */
+.auth-card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+  font-weight: 800;
+  text-align: center;
+}
+
+.auth-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* 6. Form Elements */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 16px; /* Prevents mobile zoom */
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  outline: none;
+  background: #ffffff;
+}
+
+/* 7. Action Button */
+.auth-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: transform 0.2s;
+}
+
+.auth-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* 8. Footer/Links */
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.auth-footer a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 9. Feedback */
+.error-text {
+  color: #dc2626;
+  font-weight: 600;
+  background: rgba(220, 38, 38, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* --- RESPONSIVE FIXES --- */
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 20px 15px;
+    display: block; 
+  }
+  
+  .auth-card {
+    margin: 20px auto; 
+    padding: 25px 20px;
+  }
+
+  .auth-card h1 {
+    font-size: 1.5rem;
+  }
+}
